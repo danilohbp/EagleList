@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.estudando.MainActivity;
 import com.example.estudando.R;
 import com.example.estudando.AdapterCursos;
 import com.example.estudando.entidades.Curso;

@@ -20,20 +20,9 @@ import android.widget.Toast;
 import com.example.estudando.fragmentos.AjudaFragment;
 import com.example.estudando.fragmentos.CursosEad;
 import com.example.estudando.fragmentos.MainFragment;
-import com.example.estudando.model.Emails;
 import com.google.android.material.navigation.NavigationView;
-import java.util.ArrayList;
-
 
 public class MainActivity extends AppCompatActivity{
-
-    String s1[], s2[];
-    int images[] = {R.drawable.ic_android_black_24dp, R.drawable.ic_android_black_24dp,
-            R.drawable.ic_android_black_24dp, R.drawable.ic_android_black_24dp,
-            R.drawable.ic_android_black_24dp, R.drawable.ic_android_black_24dp,
-            R.drawable.ic_android_black_24dp, R.drawable.ic_android_black_24dp};
-
-    private EmailAdapter emailAdapter;
 
     public DrawerLayout d1;
     public ActionBarDrawerToggle t;
@@ -46,20 +35,14 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        emailAdapter = new EmailAdapter(new ArrayList<>(Emails.fakeEmails()));
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //Reference drawer, togle its indicator
         d1 = (DrawerLayout) findViewById(R.id.drawer_layout);
         t = new ActionBarDrawerToggle(
                 this, d1, toolbar, R.string.open, R.string.close
         );
-
         d1.addDrawerListener(t);
         t.syncState();
-
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragmento, new MainFragment());
@@ -71,12 +54,11 @@ public class MainActivity extends AppCompatActivity{
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 String titulo = "hello";
-                if (id == R.id.listado){
+                if (id == R.id.inicio){
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.fragmento, new CursosEad());
                     fragmentTransaction.commit();
-                            //.replace(R.id.fragmento, primeiro)
 
                     Toast.makeText(getApplicationContext(), "Isso! Deu certo!", Toast.LENGTH_SHORT).show();
                 }
@@ -86,7 +68,6 @@ public class MainActivity extends AppCompatActivity{
                     fragmentTransaction.replace(R.id.fragmento, new AjudaFragment());
                     fragmentTransaction.commit();
                 }
-
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.closeDrawer(GravityCompat.START);
                 return false;

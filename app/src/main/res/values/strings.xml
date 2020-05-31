@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">EagleList</string>
-    <string name="open"/>
-    <string name="close"/>
+    <string name="open" />
+    <string name="close" />
     <string-array name="programming_languages">
         <item>Teste</item>
         <item>Teste</item>

@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/menu_menu_layout.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/menu/menu_layout.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_fragment_ajuda.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/fragment_ajuda.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_planet2.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/planet2.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_fragment_cursos_ead.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/fragment_cursos_ead.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_fragment_list.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/fragment_list.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_help_black_24dp.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_help_black_24dp.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_search_black_24dp.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_fragment_main.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/fragment_main.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_star_border_black_24dp.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_star_border_black_24dp.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_android_black_24dp.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_android_black_24dp.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_circle.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/circle.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_activity_content_course_ead.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/activity_content_course_ead.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_nav_header.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/nav_header.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/menu_menu_settings.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/menu/menu_settings.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_star_black_24dp.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_star_black_24dp.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_list_courses.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/list_courses.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_ic_email_black_24dp.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/ic_email_black_24dp.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/drawable_android_coffee.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/drawable/android_coffee.png"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    }
+]

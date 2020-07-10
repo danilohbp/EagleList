@@ -40,6 +40,10 @@
         "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/layout_fragment_favoritos.xml.flat",
+        "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/layout/fragment_favoritos.xml"
+    },
+    {
         "merged": "/root/AndroidStudioProjects/eagle-list/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/root/AndroidStudioProjects/eagle-list/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },

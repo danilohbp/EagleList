@@ -8,8 +8,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +17,7 @@ import android.view.View;
 import android.widget.Toast;
 import com.example.estudando.fragmentos.AjudaFragment;
 import com.example.estudando.fragmentos.CursosEad;
+import com.example.estudando.fragmentos.Favoritos;
 import com.example.estudando.fragmentos.MainFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -61,6 +60,18 @@ public class MainActivity extends AppCompatActivity{
                     fragmentTransaction.commit();
 
                     Toast.makeText(getApplicationContext(), "Isso! Deu certo!", Toast.LENGTH_SHORT).show();
+                }
+                if (id == R.id.favoritos){
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragmento, new Favoritos());
+                    fragmentTransaction.commit();
+                }
+                if (id == R.id.feedback){
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.fragmento, new Favoritos());
+                    fragmentTransaction.commit();
                 }
                 if (id == R.id.ajudar){
                     fragmentManager = getSupportFragmentManager();

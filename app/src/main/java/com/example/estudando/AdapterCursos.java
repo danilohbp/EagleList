@@ -43,18 +43,19 @@ public class AdapterCursos extends RecyclerView.Adapter<ViewHolder> implements V
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String curso = model.get(position).getCurso();
-        String especialidade = model.get(position).getEspecialidade();
-        String idioma = model.get(position).getIdioma();
-        String duracao = model.get(position).getDuracao();
+        String curso = model.get(position).getNome();
         String site = model.get(position).getSite();
-        int image = model.get(position).getImageid();
+        String especialidade = model.get(position).getEspecialidade();
+        String duracao = model.get(position).getDuracao();
+        String descricao = model.get(position).getDescricao();
+        String data = model.get(position).getData();
+        //int image = model.get(position).getImageid();
         holder.curso.setText(curso);
-        holder.especialidade.setText(especialidade);
-        holder.idioma.setText(idioma);
-        holder.duracao.setText(duracao);
         holder.site.setText(site);
-        holder.imageid.setImageResource(R.drawable.ic_star_border_black_24dp);
+        holder.especialidade.setText(especialidade);
+        holder.duracao.setText(duracao);
+        holder.
+        //holder.imageid.setImageResource(R.drawable.ic_star_border_black_24dp);
 
 
 

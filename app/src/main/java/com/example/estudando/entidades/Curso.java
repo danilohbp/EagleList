@@ -3,56 +3,81 @@ package com.example.estudando.entidades;
 import android.widget.ImageView;
 
 public class Curso {
-    private String especialidade;
-    private String curso;
-    private String idioma;
-    private String duracao;
+    private String nome;
     private String site;
-    private int icon;
-    private int imageid;
+    private String especialidade;
+    private String duracao;
+    private String descricao;
+    private String data;
+    private String situacao;
 
-    public Curso(String curso, String especialidade, String idioma, String duracao, String site, int imageid){
-        this.curso = curso;
-        this.especialidade = especialidade;
-        this.idioma = idioma;
-        this.duracao = duracao;
+
+    public Curso(String nome, String site, String especialidade, String duracao, String descricao, String data, String situacao) {
+        this.nome = nome;
         this.site = site;
-        this.imageid = imageid;
-    }
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
-    public String getEspecialidade() {
-        return especialidade;
-    }
-    public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
-    }
-    public String getCurso() {
-        return curso;
-    }
-    public String getIdioma() {
-        return idioma;
-    }
-    public void setIdioma(String idioma) {
-        this.idioma = idioma;
-    }
-    public String getDuracao() {
-        return duracao;
-    }
-    public void setDuracao(String duracao) {
         this.duracao = duracao;
+        this.descricao = descricao;
+        this.data = data;
+        this.situacao = situacao;
+
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String getSite() {
         return site;
     }
+
     public void setSite(String site) {
         this.site = site;
     }
-    public int getImageid() {
-        return imageid;
+
+    public String getEspecialidade() {
+        return especialidade;
     }
-    public void setImageid(int imageid) {
-        this.imageid = imageid;
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
     }
+
+    public String getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(String duracao) {
+        this.duracao = duracao;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getSituacao() {
+        return situacao;
+    }
+
+    public void setSituacao(String situacao) {
+        this.situacao = situacao;
+    }
+
+
 }

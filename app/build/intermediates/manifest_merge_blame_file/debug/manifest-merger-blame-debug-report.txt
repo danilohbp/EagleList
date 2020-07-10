@@ -25,35 +25,34 @@
 17-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:11:9-40
-21        <activity
-21-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:12:9-104
-22            android:name="com.example.estudando.ContentCourseEadActivity"
-22-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:12:19-59
-23            android:parentActivityName="com.example.estudando.MainActivity" />
-23-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:12:60-102
-24        <activity android:name="com.example.estudando.MainActivity" />
-24-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:13:9-50
-24-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:13:19-47
-25        <activity
-25-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:14:9-21:20
-26            android:name="com.example.estudando.Splash"
-26-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:15:13-35
-27            android:theme="@style/Theme.AppCompat.TelaCheia" >
-27-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:16:13-61
-28            <intent-filter>
-28-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:17:13-20:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:18:17-69
-29-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:18:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:19:17-77
-31-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:19:27-74
-32            </intent-filter>
-33        </activity>
-34    </application>
-35
-36</manifest>
+19        android:theme="@style/AppTheme" >
+19-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:11:9-40
+20        <activity
+20-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:12:9-104
+21            android:name="com.example.estudando.ContentCourseEadActivity"
+21-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:12:19-59
+22            android:parentActivityName="com.example.estudando.MainActivity" />
+22-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:12:60-102
+23        <activity android:name="com.example.estudando.MainActivity" />
+23-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:13:9-50
+23-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:13:19-47
+24        <activity
+24-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:14:9-21:20
+25            android:name="com.example.estudando.Splash"
+25-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:15:13-35
+26            android:theme="@style/Theme.AppCompat.TelaCheia" >
+26-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:16:13-61
+27            <intent-filter>
+27-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:17:13-20:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:18:17-69
+28-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:18:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:19:17-77
+30-->/root/AndroidStudioProjects/eagle-list/app/src/main/AndroidManifest.xml:19:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>

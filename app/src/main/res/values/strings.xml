@@ -24,5 +24,6 @@
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Faça a sua busca por cursos EAD! É fácil e rápido.</string>
+    <string name="ajuda">Faça a sua busca por cursos EAD! É fácil e rápido.</string>
+    <string name="favoritos">Faça a sua busca por cursos EAD! É fácil e rápido.</string>
 </resources>

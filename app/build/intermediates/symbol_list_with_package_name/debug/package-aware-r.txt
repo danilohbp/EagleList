@@ -1528,6 +1528,7 @@ id expand_activities_button
 id expanded_menu
 id fade
 id favoritos
+id feedback
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1653,6 +1654,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id semFavoritos
 id shortcut
 id showCustom
 id showHome
@@ -1714,6 +1716,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id txtSemFavoritos
 id txt_preview
 id unchecked
 id uniform
@@ -1806,6 +1809,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_ajuda
 layout fragment_cursos_ead
+layout fragment_favoritos
 layout fragment_list
 layout fragment_main
 layout list_courses
@@ -1901,6 +1905,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string ajuda
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1914,7 +1919,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string hello_blank_fragment
+string favoritos
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string mtrl_badge_numberless_content_description

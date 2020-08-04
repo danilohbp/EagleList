@@ -8,4 +8,13 @@
     <color name="colorPrimary">#193AF1</color>
     <color name="colorPrimaryDark">#B8B6B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+
+    <!--Efeito de cores diferentes nas letras da tela de Ajuda -->
+    <color name="eaglelistColoridoAzulCapri">#0aa7c8</color>
+    <color name="eaglelistColoridoAzulCeleste">#b2ffff</color>
+    <color name="eaglelistColoridoAmarelo">#FFC107</color>
+    <color name="eaglelistColoridoPreto">#000</color>
+
+
 </resources>

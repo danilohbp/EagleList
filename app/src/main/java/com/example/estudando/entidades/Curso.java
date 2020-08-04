@@ -1,7 +1,5 @@
 package com.example.estudando.entidades;
 
-import android.widget.ImageView;
-
 public class Curso {
     private String especialidade;
     private String curso;

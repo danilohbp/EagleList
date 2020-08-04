@@ -1,17 +1,22 @@
 package com.example.estudando.fragmentos;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.MenuItemCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.example.estudando.R;
 import com.example.estudando.AdapterCursos;
+import com.example.estudando.R;
 import com.example.estudando.entidades.Curso;
 
 import java.util.ArrayList;
@@ -53,5 +58,30 @@ public class CursosEad extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterCursos = new AdapterCursos(getContext(), listaCurso);
         recyclerView.setAdapter(adapterCursos);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+
+        MenuItem item = menu.findItem(R.id.search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
+
+        if (adapterCursos != null){
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    adapterCursos.getFilter().filter(query);
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    adapterCursos.getFilter().filter(newText);
+                    return false;
+                }
+            });
+        }
+
+        super.onCreateOptionsMenu(menu, inflater);
     }
 }

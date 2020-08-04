@@ -1,10 +1,13 @@
-package com.example.estudando;
+package com.example.estudando.splashScreen;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.estudando.MainActivity;
+import com.example.estudando.R;
 
 public class Splash extends AppCompatActivity {
 

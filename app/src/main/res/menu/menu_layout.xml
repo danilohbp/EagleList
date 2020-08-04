@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    <item android:id="@+id/listado"
+    <item android:id="@+id/lista"
         android:title="Início"
         android:icon="@drawable/ic_android_black_24dp"
         />
     <item android:id="@+id/favoritos"
         android:title="Favoritos"
         android:icon="@drawable/ic_star_black_24dp"/>
-    <item android:title="Feedback"
+    <item android:id="@+id/feedback"
+        android:title="Feedback"
         android:icon="@drawable/ic_email_black_24dp"/>
-    <item android:id="@+id/ajudar"
+    <item android:id="@+id/sobre"
+        android:title="Sobre"
+        android:icon="@drawable/ic_baseline_info_24"/>
+    <item android:id="@+id/ajuda"
         android:title="Ajuda ?"
         android:icon="@drawable/ic_help_black_24dp"/>
 

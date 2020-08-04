@@ -5,6 +5,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,22 +17,24 @@ import com.example.estudando.entidades.Curso;
 
 import java.util.ArrayList;
 
-public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder> implements View.OnClickListener{
+public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder> implements View.OnClickListener, Filterable {
 
     LayoutInflater inflater;
-    ArrayList<Curso> model;
+    ArrayList<Curso> model, filtroLista;  // Adicão dos parâmetros da classe Model num array
+    Filtro filtro;
 
     private View.OnClickListener listener;
 
     public AdapterCursos(Context context, ArrayList<Curso> model){
         this.inflater = LayoutInflater.from(context);
         this.model = model;
+        this.filtroLista = model;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.list_courses, parent, false);
+        View view = inflater.inflate(R.layout.row, parent, false);
         view.setOnClickListener(this);
         return new ViewHolder(view);
     }
@@ -76,12 +80,19 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             curso = itemView.findViewById(R.id.curso);
-            especialidade = itemView.findViewById(R.id.especialidade);
+            especialidade = itemView.findViewById(R.id.especialidade_value);
             idioma = itemView.findViewById(R.id.idioma_value);
             duracao = itemView.findViewById(R.id.duracao_value);
             site = itemView.findViewById(R.id.site_value);
             imageid = itemView.findViewById(R.id.img_star);
-            
         }
+    }
+
+    @Override
+    public Filter getFilter() {
+        if (filtro == null){
+            filtro = new Filtro(filtroLista,this);
+        }
+        return filtro;
     }
 }

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">EagleList</string>
-    <string name="open"/>
-    <string name="close"/>
+    <string name="open" />
+    <string name="close" />
     <string-array name="programming_languages">
         <item>Teste</item>
         <item>Teste</item>
@@ -25,4 +25,21 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Faça a sua busca por cursos EAD! É fácil e rápido.</string>
+
+    <string name="favoritoConteudo1">Remova ou adcione Favoritos selecionando o símbolo de estrela no canto superior direito dos cursos.</string>
+
+    <!-- Área de Sobre -->
+    <string name="sobreTitulo">Sobre o EagleList</string>
+    <string name="sobreConteudo1">O EagleList vem do esforço de reunir os diversos cursos da área de computação,
+        que por si só tem várias especialidades, em um ambiente de fácil navegação.</string>
+    <string name="sobreConteudo2">Aprensentamos uma relação de cursos gratuitos (tanto em acesso ao conteúdo como a certificação),
+        informando a especialidade, o site onde é oferecido, duração e idioma do material.</string>
+    <string name="sobreConteudo3">Nosso objetivo é auxiliar na procura de cursos, possibilitando que você tenha maior praticidade
+    em organizar e iniciar seus futuros estudos!</string>
+    <string name="sobreAppDesenvolvidoEm">2018-2020</string>
+
+    <!-- ÁREA DE AJUDA -->
+    <string name="ajudaConteudo1">VOLTADO PARA QUEM QUER ENCONTRAR CURSOS ONLINE DE FORMA RÁPIDA E SIMPLES</string>
+    <string name="ajudaConteudo2">VEJA O QUE O EAGLELIST OFERECE!</string>
+    <string name="ajudaConteudo3">Cursos organizados em lista, com as informações básicas para você decidir se tem interesse ou não em um curso.</string>
 </resources>

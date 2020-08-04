@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a9a9a9"
+    tools:context=".Sobre">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/eagleSobre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:paddingTop="10dp"
+            android:text="@string/sobreTitulo"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/sobreTexto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobreConteudo1"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/eagleSobre"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/sobreTexto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobreConteudo1"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/sobreTexto1"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/sobreTexto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sobreConteudo1"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:justificationMode="inter_word"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/sobreTexto2"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

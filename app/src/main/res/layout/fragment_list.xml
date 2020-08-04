@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:background="@android:color/white"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/list_courses">
+        tools:listitem="@layout/row">
 
     </androidx.recyclerview.widget.RecyclerView>
 

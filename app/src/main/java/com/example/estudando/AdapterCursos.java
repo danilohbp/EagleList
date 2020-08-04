@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.estudando.entidades.Curso;
+import com.example.estudando.modelo.Curso;
 
 import java.util.ArrayList;
 

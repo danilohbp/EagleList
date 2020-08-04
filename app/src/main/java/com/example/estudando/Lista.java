@@ -1,6 +1,6 @@
 package com.example.estudando;
 
-import com.example.estudando.entidades.Curso;
+import com.example.estudando.modelo.Curso;
 
 import java.util.ArrayList;
 

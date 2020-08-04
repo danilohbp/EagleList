@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.estudando.AdapterCursos;
 import com.example.estudando.R;
-import com.example.estudando.entidades.Curso;
+import com.example.estudando.modelo.Curso;
 
 import java.util.ArrayList;
 

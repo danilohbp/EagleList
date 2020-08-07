@@ -9,7 +9,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.AppCompat.TelaCheia" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.AppCompat.TelaCheia" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowFullscreen">true</item>
     </style>
 

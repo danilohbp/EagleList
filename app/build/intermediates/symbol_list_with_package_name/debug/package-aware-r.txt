@@ -192,6 +192,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1357,16 +1361,17 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ic_android_black_24dp
-drawable ic_baseline_info_24
+drawable eaglelist80
+drawable email
+drawable favorite
+drawable help
+drawable home
 drawable ic_baseline_school_128
 drawable ic_baseline_school_24
 drawable ic_baseline_search_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
-drawable ic_email_black_24dp
-drawable ic_help_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1378,8 +1383,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24dp
-drawable ic_star_black_24dp
 drawable ic_star_border_black_24dp
+drawable info
+drawable logo_eaglelist
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1403,6 +1409,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable planet2
+drawable splashscreen
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1481,9 +1488,11 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnEmail
 id buttonPanel
 id cancel_action
 id cancel_button
+id categoria
 id center
 id center_horizontal
 id center_vertical
@@ -1520,8 +1529,6 @@ id direct
 id disableHome
 id drawer_layout
 id dropdown_menu
-id duracao
-id duracao_value
 id eagleAjuda
 id eagleSobre
 id edit_query
@@ -1529,8 +1536,6 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id especialidade
-id especialidade_value
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1538,6 +1543,7 @@ id fade
 id favoritos
 id favoritosVazioTitulo
 id feedback
+id feedbackTitulo
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1553,6 +1559,7 @@ id ghost_view_holder
 id gone
 id group_divider
 id groups
+id grupoRadioButtons
 id hideable
 id home
 id homeAsUp
@@ -1561,10 +1568,9 @@ id iAjuda
 id icon
 id icon_group
 id iconeChapeu
-id idioma
-id idioma_value
 id ifRoom
 id image
+id imagemCurso
 id img_star
 id info
 id inicial
@@ -1635,9 +1641,12 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id rdCritica
+id rdSugestao
 id recyclerV
 id recyclerView2
 id right
@@ -1671,8 +1680,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id site
-id site_value
 id skipCollapsed
 id slide
 id smallLabel
@@ -1804,6 +1811,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_erro_conexao
 layout activity_main
 layout activity_sobre
 layout activity_splash
@@ -1826,6 +1834,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_cursos_ead
 layout fragment_favorito
+layout fragment_feed_back
 layout fragment_list
 layout fragment_main
 layout fragment_sobre
@@ -1894,6 +1903,7 @@ menu menu_layout
 menu menu_settings
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icone
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -2693,6 +2703,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

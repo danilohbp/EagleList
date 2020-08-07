@@ -2,7 +2,7 @@ package com.example.estudando;
 
 import android.widget.Filter;
 
-import com.example.estudando.modelo.Curso;
+import com.example.estudando.entidades.Curso;
 
 import java.util.ArrayList;
 

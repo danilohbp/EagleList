@@ -14,4 +14,13 @@
         android:background="@android:color/white"
         tools:listitem="@layout/row"/>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
 </RelativeLayout>

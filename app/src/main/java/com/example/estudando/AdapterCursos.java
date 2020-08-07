@@ -13,9 +13,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.estudando.modelo.Curso;
+import com.example.estudando.entidades.Curso;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder> implements View.OnClickListener, Filterable {
 
@@ -29,6 +32,24 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
         this.inflater = LayoutInflater.from(context);
         this.model = model;
         this.filtroLista = model;
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+        TextView curso, especialidade, idioma, duracao, site;
+        ImageView imageid;
+        CircleImageView imageUrl;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            curso = itemView.findViewById(R.id.curso);
+            //especialidade = itemView.findViewById(R.id.especialidade_value);
+            //idioma = itemView.findViewById(R.id.idioma_value);
+            //duracao = itemView.findViewById(R.id.duracao_value);
+            //site = itemView.findViewById(R.id.site_value);
+            imageid = itemView.findViewById(R.id.img_star);
+            imageUrl = itemView.findViewById(R.id.imagemCurso);
+        }
     }
 
     @NonNull
@@ -46,16 +67,18 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String curso = model.get(position).getCurso();
-        String especialidade = model.get(position).getEspecialidade();
-        String idioma = model.get(position).getIdioma();
-        String duracao = model.get(position).getDuracao();
+        //String especialidade = model.get(position).getEspecialidade();
+        //String idioma = model.get(position).getIdioma();
+        //String duracao = model.get(position).getDuracao();
         String site = model.get(position).getSite();
+
         int image = model.get(position).getImageid();
         holder.curso.setText(curso);
-        holder.especialidade.setText(especialidade);
-        holder.idioma.setText(idioma);
-        holder.duracao.setText(duracao);
-        holder.site.setText(site);
+        //holder.especialidade.setText(especialidade);
+        //holder.idioma.setText(idioma);
+        //holder.duracao.setText(duracao);
+        Picasso.get().load(model.get(position).getImageUrl()).into(holder.imageUrl);
+        //holder.site.setText(site);
         holder.imageid.setImageResource(R.drawable.ic_star_border_black_24dp);
 
     }
@@ -72,21 +95,6 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
         }
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
-
-        TextView curso, especialidade, idioma, duracao, site;
-        ImageView imageid, icon;
-
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            curso = itemView.findViewById(R.id.curso);
-            especialidade = itemView.findViewById(R.id.especialidade_value);
-            idioma = itemView.findViewById(R.id.idioma_value);
-            duracao = itemView.findViewById(R.id.duracao_value);
-            site = itemView.findViewById(R.id.site_value);
-            imageid = itemView.findViewById(R.id.img_star);
-        }
-    }
 
     @Override
     public Filter getFilter() {

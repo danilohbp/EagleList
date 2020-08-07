@@ -11,13 +11,12 @@
 
     <ImageView
         android:id="@+id/inicial"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="1dp"
-        android:layout_marginRight="5dp"
+        android:layout_centerInParent="true"
         android:contentDescription="Imagem de um planeta"
-        app:srcCompat="@drawable/planet2" />
+        app:srcCompat="@drawable/eaglelist80" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,9 +24,7 @@
         android:layout_below="@+id/inicial"
         android:layout_centerHorizontal="true"
         android:padding="0dp"
-        android:text="EagleList"
-        android:textColor="#000"
-        android:textSize="36sp"
+        android:text="EagleList"        android:textColor="#000"
+        android:textSize="30sp"
         android:textStyle="bold" />
-
 </RelativeLayout>

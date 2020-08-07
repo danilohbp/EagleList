@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#a9a9a9"
-    tools:context=".Sobre">
+    tools:context="com.example.estudando.fragmentos.Sobre">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:id="@+id/sobreTexto2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sobreConteudo1"
+            android:text="@string/sobreConteudo2"
             android:textColor="#fff"
             android:textSize="14sp"
             android:justificationMode="inter_word"
@@ -51,7 +51,7 @@
             android:id="@+id/sobreTexto3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sobreConteudo1"
+            android:text="@string/sobreConteudo3"
             android:textColor="#fff"
             android:textSize="14sp"
             android:justificationMode="inter_word"

@@ -16,12 +16,9 @@ import androidx.core.view.MenuItemCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.estudando.ajuda.Ajuda;
-import com.example.estudando.fragmentos.CursosEad;
-import com.example.estudando.fragmentos.Favorito;
-import com.example.estudando.fragmentos.MainFragment;
-import com.example.estudando.fragmentos.Sobre;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -31,10 +28,15 @@ public class MainActivity extends AppCompatActivity {
     public ActionBarDrawerToggle t;
     public NavigationView nv;
 
-    public AdapterCursos adapterCursos;
+    RecyclerView recyclerView;
+    AdapterCursos adapterCursos;
+    CursosEad cursos;
+
 
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,12 +67,10 @@ public class MainActivity extends AppCompatActivity {
                 if (id == R.id.lista){
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
-                    CursosEad cursos = new CursosEad();
+                    cursos = new CursosEad();
                     fragmentTransaction.replace(R.id.fragmento, cursos);
-                    fragmentTransaction.commit();
+                    fragmentTransaction.commit();;
                 }
-
-                //
 
                 if (id == R.id.favoritos){
                     fragmentManager = getSupportFragmentManager();
@@ -81,13 +81,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (id == R.id.feedback){
-                    Intent emailIntent = new Intent(Intent.ACTION_SEND);
-                    // The intent does not have a URI, so declare the "text/plain" MIME type
-                    emailIntent.setType("text/plain");
-                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"eaglelist@gmail.com"}); // recipients
-                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback para o App EagleList");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT, "Escreva seu feedback, por favor");
-                    startActivity(emailIntent);
+
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentTransaction = fragmentManager.beginTransaction();
+                    FeedBack feedBack = new FeedBack();
+                    fragmentTransaction.replace(R.id.fragmento, feedBack);
+                    fragmentTransaction.commit();
+
+
                 }
 
                 if (id == R.id.sobre){
@@ -96,12 +97,13 @@ public class MainActivity extends AppCompatActivity {
                     Sobre sobre = new Sobre();
                     fragmentTransaction.replace(R.id.fragmento, sobre);
                     fragmentTransaction.commit();
-
                 }
 
                 if (id == R.id.ajuda){
                     Intent telaAjuda = new Intent(getApplicationContext(), Ajuda.class);
                     startActivity(telaAjuda);
+
+                    habilitaIconeFiltro(true);
                 }
 
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -109,6 +111,11 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+
+        //Conteudo conteudo = new Conteudo();
+        //conteudo.execute();
     }
 
     @Override
@@ -119,23 +126,22 @@ public class MainActivity extends AppCompatActivity {
         MenuItem item = menu.findItem(R.id.search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
 
+        searchView.onActionViewCollapsed();
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                Lista lista = new Lista();
-                adapterCursos = new AdapterCursos(getApplicationContext(), lista.listagem());
-                adapterCursos.getFilter().filter(query);
+                cursos.adapterCursos.getFilter().filter(query);
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                Lista lista = new Lista();
-                adapterCursos = new AdapterCursos(getApplicationContext(), lista.listagem());
-                adapterCursos.getFilter().filter(newText);
+                cursos.adapterCursos.getFilter().filter(newText);
                 return false;
             }
         });
+
         return true;
     }
 
@@ -145,4 +151,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         return super.onOptionsItemSelected(item);
     }
+
+    public boolean habilitaIconeFiltro(Boolean teste){
+        return teste;
+    }
+
+
+
+
 }

@@ -140,6 +140,10 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_list.xml"
     },
     {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalhes_curso.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_detalhes_curso.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_planet2.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\planet2.png"
     },

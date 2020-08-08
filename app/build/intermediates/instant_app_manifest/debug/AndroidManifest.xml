@@ -21,7 +21,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.estudando.ErroConexao" />
+        <activity android:name="com.example.estudando.DetalhesCurso" />
+        <activity android:name="com.example.estudando.fragmentos.ErroConexao" />
         <activity android:name="com.example.estudando.ajuda.Ajuda" />
         <activity android:name="com.example.estudando.MainActivity" />
         <activity

@@ -2,6 +2,7 @@
 package com.example.estudando;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,16 +26,18 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
     LayoutInflater inflater;
     ArrayList<Curso> model, filtroLista;  // Adicão dos parâmetros da classe Model num array
     Filtro filtro;
+    private Context context;
 
     private View.OnClickListener listener;
 
     public AdapterCursos(Context context, ArrayList<Curso> model){
+        this.context = context;
         this.inflater = LayoutInflater.from(context);
         this.model = model;
         this.filtroLista = model;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView curso, especialidade, idioma, duracao, site;
         ImageView imageid;
@@ -49,6 +52,19 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
             //site = itemView.findViewById(R.id.site_value);
             imageid = itemView.findViewById(R.id.img_star);
             imageUrl = itemView.findViewById(R.id.imagemCurso);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            int position = getAdapterPosition();
+            Curso cursoItem = model.get(position);
+
+            Intent intent = new Intent(context, DetalhesCurso.class);
+            intent.putExtra("titulo", cursoItem.getCurso());
+            intent.putExtra("imagem", cursoItem.getImageUrl());
+            intent.putExtra("detalhes", cursoItem.getDetalhes());
+            context.startActivity(intent);
         }
     }
 

@@ -7,11 +7,12 @@ public class Curso {
     private String duracao;
     private String site;
     private String imageUrl;
+    private String detalhes;
     private int imageid;
 
     public Curso(){}
 
-    public Curso(String curso, String especialidade, String idioma, String duracao, String site, String imageUrl, int imageid) {
+    public Curso(String curso, String especialidade, String idioma, String duracao, String site, String imageUrl, int imageid, String detalhes) {
         this.curso = curso;
         this.especialidade = especialidade;
         this.idioma = idioma;
@@ -19,6 +20,7 @@ public class Curso {
         this.site = site;
         this.imageUrl = imageUrl;
         this.imageid = imageid;
+        this.detalhes = detalhes;
     }
 
     public String getImageUrl() {
@@ -43,6 +45,14 @@ public class Curso {
 
     public String getCurso() {
         return curso;
+    }
+
+    public String getDetalhes() {
+        return detalhes;
+    }
+
+    public void setDetalhes(String detalhes) {
+        this.detalhes = detalhes;
     }
 
     public String getIdioma() {

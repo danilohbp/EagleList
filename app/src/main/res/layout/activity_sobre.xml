@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#a9a9a9"
-    tools:context=".Sobre">
+    tools:context=".fragmentos.Sobre">
 
     <RelativeLayout
         android:layout_width="match_parent"

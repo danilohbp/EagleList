@@ -1,6 +1,7 @@
 package com.example.estudando;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,6 +20,11 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.estudando.ajuda.Ajuda;
+import com.example.estudando.fragmentos.CursosEad;
+import com.example.estudando.fragmentos.Favorito;
+import com.example.estudando.fragmentos.FeedBack;
+import com.example.estudando.fragmentos.MainFragment;
+import com.example.estudando.fragmentos.Sobre;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -155,8 +161,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean habilitaIconeFiltro(Boolean teste){
         return teste;
     }
-
-
 
 
 }

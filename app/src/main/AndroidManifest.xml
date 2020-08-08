@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/icone"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ErroConexao"></activity>
+        <activity android:name=".DetalhesCurso"></activity>
+        <activity android:name=".fragmentos.ErroConexao" />
         <activity android:name=".ajuda.Ajuda" />
         <activity android:name=".MainActivity" />
         <activity

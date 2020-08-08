@@ -1484,6 +1484,7 @@ id all
 id always
 id async
 id auto
+id bannerCurso
 id barrier
 id beginning
 id blocking
@@ -1492,6 +1493,7 @@ id btnEmail
 id buttonPanel
 id cancel_action
 id cancel_button
+id cardBannerCurso
 id categoria
 id center
 id center_horizontal
@@ -1523,6 +1525,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detalhesCurso
 id dialog_button
 id dimensions
 id direct
@@ -1731,6 +1734,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id tituloCurso
 id toolbar
 id top
 id topPanel
@@ -1811,6 +1815,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detalhes_curso
 layout activity_erro_conexao
 layout activity_main
 layout activity_sobre

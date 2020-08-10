@@ -5,32 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#a9a9a9"
+    android:background="#fff"
     tools:context="com.example.estudando.fragmentos.Sobre">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="10dp">
+        android:gravity="center">
 
         <TextView
             android:id="@+id/eagleSobre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center|top"
+            android:gravity="center_horizontal"
             android:paddingTop="10dp"
             android:text="@string/sobreTitulo"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#fff"/>
+            android:textColor="@color/eaglelistColoridoAzulCapri"/>
 
         <TextView
             android:id="@+id/sobreTexto1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sobreConteudo1"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="14sp"
             android:justificationMode="inter_word"
             android:gravity="center_horizontal"
@@ -41,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sobreConteudo2"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="14sp"
             android:justificationMode="inter_word"
             android:gravity="center_horizontal"
@@ -52,13 +51,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sobreConteudo3"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:textSize="14sp"
             android:justificationMode="inter_word"
             android:gravity="center_horizontal"
             android:layout_below="@id/sobreTexto2"
             android:layout_margin="5dp"/>
 
+
+
+        <ImageView
+            android:id="@+id/logoSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sobreTexto3"
+            android:src="@drawable/eaglelist80"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/copyright"
+            android:layout_below="@+id/logoSobre"
+            android:layout_alignStart="@+id/logoSobre"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoSobre"
+            android:layout_alignEnd="@+id/logoSobre"
+            android:text="2020"
+            android:textSize="20sp"
+            android:paddingRight="10dp"/>
     </RelativeLayout>
 
 </LinearLayout>

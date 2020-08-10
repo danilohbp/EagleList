@@ -16,14 +16,6 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_feed_back.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_feed_back.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
@@ -32,16 +24,8 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_android_coffee.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\android_coffee.png"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_circle.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\circle.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cursos_ead.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_cursos_ead.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icone.png.flat",
@@ -52,8 +36,8 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\ic_baseline_school_24.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\home.xml"
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_header_eaglelist.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\gradient_header_eaglelist.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -62,6 +46,74 @@
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_help.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\help.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_email.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\email.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_layout.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\menu\\menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_ajuda.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\ajuda.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_search_24.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_info.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\info.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_eaglelist80.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\eaglelist80.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_copyright.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\copyright.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_feed_back.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_feed_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cursos_ead.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_cursos_ead.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\home.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_favorito.xml.flat",
@@ -74,14 +126,6 @@
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_splash.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_favorite.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\favorite.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_school_128.xml.flat",
@@ -104,60 +148,20 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\row.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_erro_conexao.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_erro_conexao.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_email.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\email.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sobre.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_sobre.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_ajuda.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\ajuda.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_layout.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\menu\\menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_list.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_list.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalhes_curso.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\activity_detalhes_curso.xml"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_planet2.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\planet2.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_search_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_info.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\info.xml"
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_list.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_list.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
@@ -170,14 +174,6 @@
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_eaglelist80.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\drawable\\eaglelist80.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\src\\main\\res\\layout\\fragment_main.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",

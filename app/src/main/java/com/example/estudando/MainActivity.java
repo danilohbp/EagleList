@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
 
+    SearchView searchView;
 
 
     @Override
@@ -49,13 +51,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitleTextColor(getResources().getColor(R.color.colorWhite));
         setSupportActionBar(toolbar);
+
+
 
         d1 = (DrawerLayout) findViewById(R.id.drawer_layout);
         t = new ActionBarDrawerToggle(
                 this, d1, toolbar, R.string.open, R.string.close
         );
+
+
 
         d1.addDrawerListener(t);
         t.syncState();
@@ -84,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     Favorito favorito = new Favorito();
                     fragmentTransaction.replace(R.id.fragmento, favorito);
                     fragmentTransaction.commit();
+
                 }
 
                 if (id == R.id.feedback){
@@ -130,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_settings, menu);
 
         MenuItem item = menu.findItem(R.id.search);
+
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
 
         searchView.onActionViewCollapsed();

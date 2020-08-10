@@ -61,12 +61,47 @@
             android:layout_below="@+id/descricaoCurso"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/irSite"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Acessar Site"
             android:layout_centerInParent="true"
             android:layout_below="@+id/outrosDetalhes"
-            android:onClick="acessarSite"/>
+            android:layout_marginBottom="5dp"
+            android:layout_margin="16dp"
+            android:text="IR PARA O SITE"
+            android:textColor="@color/colorWhite"
+            android:padding="15dp"
+            android:background="@color/colorPrimary"
+            android:onClick="acessarSite"
+            />
+        <Button
+            android:id="@+id/copiarLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/irSite"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="16dp"
+            android:text="COPIAR LINK"
+            android:textColor="@color/colorWhite"
+            android:padding="15dp"
+            android:background="@color/colorPrimary"
+            android:onClick="acessarSite"
+            />
+        <Button
+            android:id="@+id/compartilhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/copiarLink"
+            android:layout_marginBottom="5dp"
+            android:layout_margin="16dp"
+            android:text="COMPARTILHAR"
+            android:textColor="@color/colorWhite"
+            android:padding="15dp"
+            android:background="@color/colorPrimary"
+            android:onClick="acessarSite"
+            />
 
     </RelativeLayout>
 

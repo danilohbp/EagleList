@@ -2,6 +2,14 @@
     <string name="app_name">EagleList</string>
     <string name="open" />
     <string name="close" />
+
+    <string name="inicio">Início</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="feedback">FeedBack</string>
+    <string name="sobre">Sobre</string>
+    <string name="ajuda">Ajuda</string>
+
+
     <string-array name="programming_languages">
         <item>Teste</item>
         <item>Teste</item>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".fragmentos.ListFragment"
+    android:background="@color/colorCinza"
     >
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerV"

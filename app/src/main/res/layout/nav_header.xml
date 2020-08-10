@@ -5,8 +5,8 @@
     android:layout_height="230dp"
     android:layout_alignParentTop="true"
     android:orientation="vertical"
-    android:padding="0dp">
-
+    android:padding="0dp"
+    android:background="@drawable/gradient_header_eaglelist">
 
 
     <ImageView
@@ -24,7 +24,8 @@
         android:layout_below="@+id/inicial"
         android:layout_centerHorizontal="true"
         android:padding="0dp"
-        android:text="EagleList"        android:textColor="#000"
+        android:text="EagleList"
+        android:textColor="#000"
         android:textSize="30sp"
         android:textStyle="bold" />
 </RelativeLayout>

@@ -32,9 +32,9 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
 
     public AdapterCursos(Context context, ArrayList<Curso> model){
         this.context = context;
-        this.inflater = LayoutInflater.from(context);
-        this.model = model;
+        //this.inflater = ;
         this.filtroLista = model;
+        this.model = model;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
@@ -71,14 +71,14 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.row, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row, parent, false);
         view.setOnClickListener(this);
         return new ViewHolder(view);
     }
 
-    public void setOnClickListener(View.OnClickListener listener) {
-        this.listener = listener;
-    }
+    //public void setOnClickListener(View.OnClickListener listener) {
+      //  this.listener = listener;
+    //}
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
@@ -103,6 +103,8 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
     public int getItemCount() {
         return model.size();
     }
+
+
 
     @Override
     public void onClick(View view) {

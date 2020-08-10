@@ -43,7 +43,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/detalhesCurso"
+            android:id="@+id/descricaoCurso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tituloCurso"
@@ -51,12 +51,18 @@
             android:textSize="20sp"
             android:padding="16dp"/>
 
+        <TextView
+            android:id="@+id/outrosDetatalhes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descricaoCurso"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Acessar Site"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/detalhesCurso"
+            android:layout_below="@+id/outrosDetatalhes"
             android:onClick="acessarSite"/>
 
     </RelativeLayout>

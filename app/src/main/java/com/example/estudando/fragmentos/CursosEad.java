@@ -81,11 +81,6 @@ public class CursosEad extends Fragment {
         }
 
         @Override
-        protected void onCancelled() {
-            super.onCancelled();
-        }
-
-        @Override
         protected Void doInBackground(Void... voids) {
             try {
                 String url = "https://www.portalgsti.com.br/cursos";
@@ -97,18 +92,19 @@ public class CursosEad extends Fragment {
                 int size = data.size();
 
                 for (int i=0; i<size; i++){
-                    String nomeCurso = data.select("a.thumb__course")
+                    String nomeCurso = data.select("span.thumb__course__body")
                             .select("span.thumb__course__title")
                             .eq(i)
                             .text();
                             //.attr("title");
 
-                    String imagemCurso = data.select("a.thumb__course")
+                    String imagemCurso = data.select("figure")
                             .select("img")
                             .eq(i)
                             .attr("src");
 
                     String detalhesUrl = data.select("a.thumb__course")
+                            .eq(i)
                             .attr("href");
 
                     parseItem.add(new Curso(nomeCurso, "", "", "", url, imagemCurso, R.id.img_star, detalhesUrl));

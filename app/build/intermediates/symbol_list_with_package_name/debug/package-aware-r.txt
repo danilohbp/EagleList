@@ -1520,12 +1520,12 @@ id cut
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
+id descricaoCurso
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id detalhesCurso
 id dialog_button
 id dimensions
 id direct
@@ -1635,6 +1635,7 @@ id notification_main_column_container
 id off
 id on
 id outline
+id outrosDetatalhes
 id packed
 id parallax
 id parent

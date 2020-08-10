@@ -7,11 +7,9 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.estudando.entidades.Curso;
 import com.squareup.picasso.Picasso;
 
 import org.jsoup.Jsoup;
@@ -22,9 +20,10 @@ import java.io.IOException;
 
 public class DetalhesCurso extends AppCompatActivity {
 
-    ImageView bannerCurso;
-    TextView tituloCurso, detalhesCursoView;
-    String detalhesCurso;
+    private ImageView bannerCurso;
+    private TextView tituloCurso, detalhesCursoView, outrosDetalhesCursoView;
+    private String descricaoCurso, outrosDetalhesCurso;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +32,8 @@ public class DetalhesCurso extends AppCompatActivity {
 
         bannerCurso = findViewById(R.id.bannerCurso);
         tituloCurso = findViewById(R.id.tituloCurso);
-        detalhesCursoView = findViewById(R.id.detalhesCurso);
+        detalhesCursoView = findViewById(R.id.descricaoCurso);
+        outrosDetalhesCursoView = findViewById(R.id.outrosDetatalhes);
 
         tituloCurso.setText(getIntent().getStringExtra("titulo"));
         Picasso.get().load(getIntent().getStringExtra("imagem")).into(bannerCurso);
@@ -54,12 +54,8 @@ public class DetalhesCurso extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            detalhesCursoView.setText(detalhesCurso);
-        }
-
-        @Override
-        protected void onCancelled() {
-            super.onCancelled();
+            detalhesCursoView.setText(descricaoCurso);
+            outrosDetalhesCursoView.setText(outrosDetalhesCurso);
         }
 
         @Override
@@ -71,10 +67,18 @@ public class DetalhesCurso extends AppCompatActivity {
                 String url = baseUrl + detalhesUrl;
                 Document doc = Jsoup.connect(url).get();
 
-                Elements data = doc.select("div.course__about__text");
+                Elements data = doc.select("div.course__about");
 
-                detalhesCurso = data.select("div.course__about__text")
+                descricaoCurso = data.select("div.course__about__text")
                         .text();
+
+                outrosDetalhesCurso = data.select("ul.course_about_list")
+                        .select("li")
+                        .text();
+
+
+
+
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -82,11 +86,13 @@ public class DetalhesCurso extends AppCompatActivity {
             }
             return null;
         }
+
+
     }
 
     public void acessarSite(View v){
 
-        String google = "http://www.google.com";
+        String google = "https://www.portalgsti.com.br/";
 
         Uri url = Uri.parse(google);
 
@@ -94,4 +100,5 @@ public class DetalhesCurso extends AppCompatActivity {
         startActivity(acessar);
 
     }
+
 }

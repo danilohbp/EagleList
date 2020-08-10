@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
+        <!--<androidx.cardview.widget.CardView
             android:id="@+id/cardBannerCurso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="5dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp">-->
 
             <ImageView
                 android:id="@+id/bannerCurso"
@@ -27,13 +27,13 @@
                 android:layout_margin="0dp"
                 android:padding="0dp" />
 
-        </androidx.cardview.widget.CardView>
+        <!--</androidx.cardview.widget.CardView>-->
 
         <TextView
             android:id="@+id/tituloCurso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/cardBannerCurso"
+            android:layout_below="@+id/bannerCurso"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -52,9 +52,12 @@
             android:padding="16dp"/>
 
         <TextView
-            android:id="@+id/outrosDetatalhes"
+            android:id="@+id/outrosDetalhes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Outros de detalhes"
+            android:textSize="20sp"
+            android:padding="16dp"
             android:layout_below="@+id/descricaoCurso"/>
 
         <Button
@@ -62,7 +65,7 @@
             android:layout_height="wrap_content"
             android:text="Acessar Site"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/outrosDetatalhes"
+            android:layout_below="@+id/outrosDetalhes"
             android:onClick="acessarSite"/>
 
     </RelativeLayout>

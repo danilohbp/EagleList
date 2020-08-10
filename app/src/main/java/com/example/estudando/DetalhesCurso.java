@@ -33,7 +33,7 @@ public class DetalhesCurso extends AppCompatActivity {
         bannerCurso = findViewById(R.id.bannerCurso);
         tituloCurso = findViewById(R.id.tituloCurso);
         detalhesCursoView = findViewById(R.id.descricaoCurso);
-        outrosDetalhesCursoView = findViewById(R.id.outrosDetatalhes);
+        outrosDetalhesCursoView = findViewById(R.id.outrosDetalhes);
 
         tituloCurso.setText(getIntent().getStringExtra("titulo"));
         Picasso.get().load(getIntent().getStringExtra("imagem")).into(bannerCurso);
@@ -54,7 +54,7 @@ public class DetalhesCurso extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            detalhesCursoView.setText(descricaoCurso);
+            detalhesCursoView.setText(descricaoCurso + outrosDetalhesCurso);
             outrosDetalhesCursoView.setText(outrosDetalhesCurso);
         }
 
@@ -72,12 +72,9 @@ public class DetalhesCurso extends AppCompatActivity {
                 descricaoCurso = data.select("div.course__about__text")
                         .text();
 
-                outrosDetalhesCurso = data.select("ul.course_about_list")
+                outrosDetalhesCurso = data.select("ul.course__about__list")
                         .select("li")
-                        .text();
-
-
-
+                        .text().concat("/n");
 
 
             } catch (IOException e) {

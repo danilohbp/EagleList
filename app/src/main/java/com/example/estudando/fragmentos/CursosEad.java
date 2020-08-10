@@ -53,14 +53,15 @@ public class CursosEad extends Fragment {
     }
 
     public void mostrarDados(){
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        //Se houver algum erro troque para este dados.carregarLista()
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterCursos = new AdapterCursos(getContext(), parseItem);
         recyclerView.setAdapter(adapterCursos);
 
-        Conteudo conteudo = new Conteudo();
-        conteudo.execute();
+        if (parseItem.isEmpty()){
+            Conteudo conteudo = new Conteudo();
+            conteudo.execute();
+        }
     }
 
     private class Conteudo extends AsyncTask<Void, Void, Void> {
@@ -68,8 +69,10 @@ public class CursosEad extends Fragment {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            progressBar.setVisibility(View.VISIBLE);
-            progressBar.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_in));
+            if (parseItem.isEmpty()){
+                progressBar.setVisibility(View.VISIBLE);
+                progressBar.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_in));
+            }
         }
 
         @Override
@@ -92,6 +95,7 @@ public class CursosEad extends Fragment {
                 int size = data.size();
 
                 for (int i=0; i<size; i++){
+
                     String nomeCurso = data.select("span.thumb__course__body")
                             .select("span.thumb__course__title")
                             .eq(i)
@@ -109,6 +113,7 @@ public class CursosEad extends Fragment {
 
                     parseItem.add(new Curso(nomeCurso, "", "", "", url, imagemCurso, R.id.img_star, detalhesUrl));
                 }
+
             } catch (IOException e) {
                 e.printStackTrace();
 

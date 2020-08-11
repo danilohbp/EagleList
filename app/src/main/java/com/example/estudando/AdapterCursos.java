@@ -46,7 +46,7 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             curso = itemView.findViewById(R.id.curso);
-            //especialidade = itemView.findViewById(R.id.especialidade_value);
+            especialidade = itemView.findViewById(R.id.especialidade_valor);
             //idioma = itemView.findViewById(R.id.idioma_value);
             //duracao = itemView.findViewById(R.id.duracao_value);
             //site = itemView.findViewById(R.id.site_value);
@@ -83,14 +83,14 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String curso = model.get(position).getCurso();
-        //String especialidade = model.get(position).getEspecialidade();
+        String especialidade = model.get(position).getEspecialidade();
         //String idioma = model.get(position).getIdioma();
         //String duracao = model.get(position).getDuracao();
         String site = model.get(position).getSite();
 
         int image = model.get(position).getImageid();
         holder.curso.setText(curso);
-        //holder.especialidade.setText(especialidade);
+        holder.especialidade.setText(especialidade);
         //holder.idioma.setText(idioma);
         //holder.duracao.setText(duracao);
         Picasso.get().load(model.get(position).getImageUrl()).into(holder.imageUrl);

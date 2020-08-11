@@ -54,8 +54,8 @@ public class DetalhesCurso extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            detalhesCursoView.setText(descricaoCurso + outrosDetalhesCurso);
-            outrosDetalhesCursoView.setText(outrosDetalhesCurso);
+            detalhesCursoView.setText('"' + descricaoCurso + '"');
+            outrosDetalhesCursoView.setText('"' + outrosDetalhesCurso + '"');
         }
 
         @Override

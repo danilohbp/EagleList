@@ -26,7 +26,7 @@
 
 ## Arquitetura do projeto
 
-<img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />
+<img alt="Diagrama de classe" title="Diagrama de Classe" src="./assets/images/Diaclasse.png" />
 		
 
 ## Tecnologias utilizadas

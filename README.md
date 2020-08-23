@@ -24,6 +24,10 @@
 ### Status do Projeto
 ##### Em desenvolvimento :warning:
 
+## Arquitetura do projeto
+
+	![Diagrama de classes.png](C:\Users\Thales\Documents\Análise e Desenvolvimento de Sistemas\5º Semestre\TG\Documentação app e Github\Readme)
+
 ## Tecnologias utilizadas
 
 * Linguagem: Java

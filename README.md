@@ -15,9 +15,9 @@
 [//]: # O que o aplicativo pode fazer
 ## Funções :checkered_flag:
 
-:trophy: O aplicativo permite procurar cursos gratuitos tanto o conteúdo quanto a certificação, na área de computação, de maneira ordenada e organizada.
-:trophy: Permite favoritar os cursos e deixa-los salvos em uma guia especifica.
-:trophy: Pode ser realizado envio de feedback diretamente aos administradores do app.
+* :trophy: O aplicativo permite procurar cursos gratuitos tanto o conteúdo quanto a certificação, na área de computação, de maneira ordenada e organizada.
+* :trophy: Permite favoritar os cursos e deixa-los salvos em uma guia especifica.
+* :trophy: Pode ser realizado envio de feedback diretamente aos administradores do app.
 
 ### Status do Projeto
 ##### Em desenvolvimento :warning:

@@ -24,14 +24,14 @@
 ### Status do Projeto
 ##### Em desenvolvimento :warning:
 
-## Arquitetura do projeto
-
-	![Diagrama de classes.png](C:\Users\Thales\Documents\Análise e Desenvolvimento de Sistemas\5º Semestre\TG\Documentação app e Github\Readme)
-
 ## Tecnologias utilizadas
 
 * Linguagem: Java
 * IDE: Android Studio
-* SDK min V.22 (api lollipop)
 * Web scraping [Jsoup](https://github.com/jhy/jsoup "Biblioteca Jsoup"). Biblioteca utilizada para fazer a analise da estrutura HTML (DOM) dos sites que oferecem os cursos
+
+
+## Requisitos e Recursos
+
+* SDK min V.22 (api lollipop)
 * Aplicativo se comunica com outro app como Gmail (referente a função "envio de feedback")

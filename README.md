@@ -26,7 +26,7 @@
 
 ## Arquitetura do projeto
 
-![Diaclasse](/eagle-list/assets/images/Diaclasse.png)
+<img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/banner.png" />
 		
 
 ## Tecnologias utilizadas

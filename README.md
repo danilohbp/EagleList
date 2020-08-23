@@ -24,6 +24,10 @@
 ### Status do Projeto
 ##### Em desenvolvimento :warning:
 
+## Arquitetura do projeto
+
+	![Diagrama de Classes](/assets/images/Diagrama de classes.png)
+
 ## Tecnologias utilizadas
 
 * Linguagem: Java

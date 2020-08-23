@@ -26,7 +26,7 @@
 
 ## Arquitetura do projeto
 
-	![Diaclasse](/eagle-list/assets/images/Diaclasse.png)
+	![Diaclasse](/eagle-list/tree/master/assets/images/Diaclasse.png)
 
 ## Tecnologias utilizadas
 

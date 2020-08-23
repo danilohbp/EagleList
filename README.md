@@ -8,9 +8,9 @@
 [//]: # Requisitos minimos para rodar o projeto
 ## Getting Started
 
-* Possuir Celular Android com versão 5 ou superior.
-* Instalar a apk disponibilizada.
-* Possuir cadastro em uma conta do google.
+* Possuir Celular Android com versão 5.1 ou superior.
+* Instalar a APK disponibilizada.
+* Possuir cadastro em uma conta do Google.
 
 [//]: # O que o aplicativo pode fazer
 ## Funções :checkered_flag:

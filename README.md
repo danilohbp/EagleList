@@ -26,7 +26,7 @@
 
 ## Arquitetura do projeto
 
-	![Diaclasse](./assets/images/Diaclasse.png)
+	![Diaclasse](Diaclasse.png)
 
 ## Tecnologias utilizadas
 

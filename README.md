@@ -26,7 +26,7 @@
 
 ## Arquitetura do projeto
 
-	![Diagrama de Classes](/assets/images/Diagrama de classes.png)
+	![Diagrama de classes](/assets/images/Diagrama_de_classes.png)
 
 ## Tecnologias utilizadas
 

@@ -27,8 +27,6 @@
 ## Arquitetura do projeto
 
 ![Diaclasse](/eagle-list/assets/images/Diaclasse.png)
-	
-<img alt="Diagrama de classe" title="Diagrama de Classe" src="./assets/images/Diaclasse.png" />
 		
 
 ## Tecnologias utilizadas

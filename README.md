@@ -33,5 +33,5 @@
 
 ## Requisitos e Recursos
 
-* SDK min V.22 (api lollipop)
+* SDK min V.22 (API Lollipop)
 * Aplicativo se comunica com outro app como Gmail (referente a função "envio de feedback")

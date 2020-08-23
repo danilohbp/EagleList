@@ -2,17 +2,17 @@
 
 # EAGLELIST 
 
-[//]: # Breve descrição do projeto
+[//]: # (Breve descrição do projeto)
 ##### Esse projeto consiste na criação e desenvolvimento de um aplicativo Android voltado para á area de computação e educação.
 
-[//]: # Requisitos minimos para rodar o projeto
+[//]: # (Requisitos minimos para rodar o projeto)
 ## Getting Started
 
 * Possuir Celular Android com versão 5.1 ou superior.
 * Instalar a APK disponibilizada.
 * Possuir cadastro em uma conta do Google.
 
-[//]: # O que o aplicativo pode fazer
+[//]: # (O que o aplicativo pode fazer)
 ## Funções :checkered_flag:
 
 1. :trophy: O aplicativo permite procurar cursos gratuitos tanto o conteúdo quanto a certificação, na área de computação, de maneira ordenada e organizada.

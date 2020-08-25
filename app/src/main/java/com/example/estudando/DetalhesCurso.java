@@ -54,8 +54,8 @@ public class DetalhesCurso extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            detalhesCursoView.setText('"' + descricaoCurso + '"');
-            outrosDetalhesCursoView.setText('"' + outrosDetalhesCurso + '"');
+            detalhesCursoView.setText(descricaoCurso);
+            outrosDetalhesCursoView.setText(outrosDetalhesCurso);
         }
 
         @Override
@@ -65,6 +65,7 @@ public class DetalhesCurso extends AppCompatActivity {
                 String detalhesUrl = getIntent().getStringExtra("detalhes");
 
                 String url = baseUrl + detalhesUrl;
+
                 Document doc = Jsoup.connect(url).get();
 
                 Elements data = doc.select("div.course__about");
@@ -86,6 +87,7 @@ public class DetalhesCurso extends AppCompatActivity {
 
 
     }
+
 
     public void acessarSite(View v){
 

@@ -1366,6 +1366,7 @@ drawable eaglelist80
 drawable email
 drawable favorite
 drawable gradient_header_eaglelist
+drawable gradient_homepage
 drawable help
 drawable home
 drawable ic_baseline_school_128
@@ -1485,6 +1486,7 @@ id all
 id always
 id async
 id auto
+id background_gradiente_homepage
 id bannerCurso
 id barrier
 id beginning
@@ -1494,6 +1496,7 @@ id btnEmail
 id buttonPanel
 id cancel_action
 id cancel_button
+id cardHomePage
 id categoria
 id center
 id center_horizontal
@@ -1542,6 +1545,8 @@ id end
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id especialidade
+id especialidade_valor
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1569,7 +1574,6 @@ id grupoRadioButtons
 id hideable
 id home
 id homeAsUp
-id home_main
 id iAjuda
 id icon
 id icon_group
@@ -1736,6 +1740,7 @@ id text_input_start_icon
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id textoAguarde
 id time
 id title
 id titleDividerNoCustom

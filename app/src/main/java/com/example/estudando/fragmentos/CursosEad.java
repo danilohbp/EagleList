@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -32,21 +33,18 @@ public class CursosEad extends Fragment {
 
     public AdapterCursos adapterCursos;
     RecyclerView recyclerView;
-
     ProgressBar progressBar;
-
+    TextView texto;
     ArrayList<Curso> parseItem = new ArrayList<>();
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_cursos_ead, container, false);
         recyclerView = view.findViewById(R.id.recyclerV);
 
         progressBar = view.findViewById(R.id.progressBar);
+        texto = view.findViewById(R.id.textoAguarde);
 
         mostrarDados();
         return view;
@@ -62,8 +60,8 @@ public class CursosEad extends Fragment {
             Conteudo conteudo = new Conteudo();
             conteudo.execute();
 
-            Site2 site2 = new Site2();
-            site2.execute();
+            //Site2 site2 = new Site2();
+            //site2.execute();
         }
     }
 
@@ -82,6 +80,7 @@ public class CursosEad extends Fragment {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             progressBar.setVisibility(View.GONE);
+            texto.setVisibility(View.GONE);
             progressBar.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_out));
             adapterCursos.notifyDataSetChanged();
         }
@@ -98,13 +97,12 @@ public class CursosEad extends Fragment {
 
                 int size = data.size();
 
-                for (int i=0; i<4; i++){
+                for (int i=0; i<size; i++){
 
                     String nomeCurso = data.select("span.thumb__course__body")
                             .select("span.thumb__course__title")
                             .eq(i)
                             .text();
-                            //.attr("title");
 
                     String especialidade = data.select("span.thumb__course__categories")
                             .eq(i)
@@ -126,7 +124,7 @@ public class CursosEad extends Fragment {
             } catch (IOException e) {
                 e.printStackTrace();
 
-                Intent intent = new Intent(getContext(), MainActivity.class);
+                Intent intent = new Intent(getContext(), ErroConexao.class);
                 startActivity(intent);
             }
             return null;
@@ -134,7 +132,7 @@ public class CursosEad extends Fragment {
     }
 
 
-    private class Site2 extends AsyncTask<Void, Void, Void> {
+    /*private class Site2 extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected void onPreExecute() {
@@ -165,13 +163,12 @@ public class CursosEad extends Fragment {
 
                 int size = data.size();
 
-                for (int i=0; i<3; i++){
+                for (int i=0; i<size; i++){
 
                     String nomeCurso = data.select("h2.media-heading")
                             .select("a")
                             .eq(i)
                             .text();
-                    //.attr("title");
 
                     String especialidade = data.select("div.article-aside")
                             .select("span")
@@ -191,5 +188,5 @@ public class CursosEad extends Fragment {
             }
             return null;
         }
-    }
+    }*/
 }

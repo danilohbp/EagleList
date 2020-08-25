@@ -20,7 +20,18 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:visibility="gone"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/textoAguarde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aguarde um momento..."
+        android:textSize="20sp"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"/>
 
 
 

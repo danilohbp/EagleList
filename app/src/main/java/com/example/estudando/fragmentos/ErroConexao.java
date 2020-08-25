@@ -18,6 +18,5 @@ public class ErroConexao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_erro_conexao);
 
-
     }
 }

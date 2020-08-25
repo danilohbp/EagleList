@@ -1,31 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentos.MainFragment">
 
-    <ImageView
-        android:id="@+id/home_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|center_horizontal"
-        android:layout_marginTop="40dp"
-        android:contentDescription="Imagem de um planeta"
-        android:background="@drawable/logo_eaglelist"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHomePage"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/colorWhite"
+        android:layout_below="@+id/background_gradiente_homepage"
+        android:paddingTop="-10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:outlineAmbientShadowColor="@color/colorWhite"
+        android:layout_marginTop="-20dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerInParent="true">
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
+        android:id="@+id/background_gradiente_homepage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_homepage"
+        >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:gravity="center|center_horizontal|center_vertical"
-            android:text="@string/hello_blank_fragment"
-            android:textSize="24sp" />
+            android:layout_height="match_parent"
+            android:text="EAGLE LIST"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"/>
     </LinearLayout>
-</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardHomePage"
+        tools:listitem="@layout/row"/>
+
+</RelativeLayout>

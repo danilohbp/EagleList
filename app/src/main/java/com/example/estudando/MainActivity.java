@@ -11,6 +11,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.ActionMenuItemView;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -39,10 +40,8 @@ public class MainActivity extends AppCompatActivity {
     AdapterCursos adapterCursos;
     CursosEad cursos;
 
-
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
-
     SearchView searchView;
 
 
@@ -55,21 +54,18 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setTitleTextColor(getResources().getColor(R.color.colorWhite));
         setSupportActionBar(toolbar);
 
-
-
         d1 = (DrawerLayout) findViewById(R.id.drawer_layout);
         t = new ActionBarDrawerToggle(
                 this, d1, toolbar, R.string.open, R.string.close
         );
-
-
 
         d1.addDrawerListener(t);
         t.syncState();
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.fragmento, new MainFragment());
+        cursos = new CursosEad();
+        fragmentTransaction.add(R.id.fragmento, cursos);
         fragmentTransaction.commit();
 
         nv = (NavigationView) findViewById(R.id.nav_view);
@@ -80,9 +76,12 @@ public class MainActivity extends AppCompatActivity {
                 if (id == R.id.lista){
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
-                    cursos = new CursosEad();
+                    //cursos = new CursosEad();
                     fragmentTransaction.replace(R.id.fragmento, cursos);
                     fragmentTransaction.commit();;
+
+                    ActionMenuItemView searchView = findViewById(R.id.search);
+                    searchView.setVisibility(View.VISIBLE);
                 }
 
                 if (id == R.id.favoritos){
@@ -92,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.fragmento, favorito);
                     fragmentTransaction.commit();
 
+                    ActionMenuItemView searchView = findViewById(R.id.search);
+                    searchView.setVisibility(View.GONE);
                 }
 
                 if (id == R.id.feedback){
@@ -102,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.fragmento, feedBack);
                     fragmentTransaction.commit();
 
-
+                    ActionMenuItemView searchView = findViewById(R.id.search);
+                    searchView.setVisibility(View.GONE);
                 }
 
                 if (id == R.id.sobre){
@@ -111,6 +113,9 @@ public class MainActivity extends AppCompatActivity {
                     Sobre sobre = new Sobre();
                     fragmentTransaction.replace(R.id.fragmento, sobre);
                     fragmentTransaction.commit();
+
+                    ActionMenuItemView searchView = findViewById(R.id.search);
+                    searchView.setVisibility(View.GONE);
                 }
 
                 if (id == R.id.ajuda){
@@ -118,6 +123,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(telaAjuda);
 
                     habilitaIconeFiltro(true);
+
+                    ActionMenuItemView searchView = findViewById(R.id.search);
+                    searchView.setVisibility(View.GONE);
                 }
 
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -126,10 +134,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-        //Conteudo conteudo = new Conteudo();
-        //conteudo.execute();
     }
 
     @Override
@@ -142,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
 
         searchView.onActionViewCollapsed();
+
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

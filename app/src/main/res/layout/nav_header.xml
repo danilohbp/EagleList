@@ -6,7 +6,7 @@
     android:layout_alignParentTop="true"
     android:orientation="vertical"
     android:padding="0dp"
-    android:background="@drawable/gradient_header_eaglelist">
+    android:background="@drawable/gradient_homepage">
 
 
     <ImageView

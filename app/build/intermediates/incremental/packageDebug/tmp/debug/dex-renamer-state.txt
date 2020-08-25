@@ -1,4 +1,4 @@
-#Mon Aug 10 19:49:23 BRT 2020
+#Tue Aug 25 15:05:27 BRT 2020
 base.0=C\:\\Users\\User\\AndroidStudioProjects\\eagle-list\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

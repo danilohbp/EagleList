@@ -31,7 +31,8 @@
         android:textSize="20sp"
         android:layout_below="@+id/progressBar"
         android:layout_marginTop="5dp"
-        android:gravity="center_horizontal"/>
+        android:gravity="center_horizontal"
+        android:visibility="gone"/>
 
 
 

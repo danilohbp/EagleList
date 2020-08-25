@@ -72,6 +72,7 @@ public class CursosEad extends Fragment {
             super.onPreExecute();
             if (parseItem.isEmpty()){
                 progressBar.setVisibility(View.VISIBLE);
+                texto.setVisibility(View.VISIBLE);
                 progressBar.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_in));
             }
         }

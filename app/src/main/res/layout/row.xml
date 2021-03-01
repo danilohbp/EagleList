@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="3dp"
     app:cardElevation="2dp"
-    app:cardUseCompatPadding="true"
+    android:background="#000"
+    app:cardUseCompatPadding="false"
     tools:showIn="@layout/fragment_list">
 
     <RelativeLayout
@@ -27,7 +28,8 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imagemCurso"
             android:layout_width="80dp"
-            android:layout_height="80dp"/>
+            android:layout_height="80dp"
+            android:src="@drawable/curso"/>
 
         <TextView
             android:id="@+id/curso"
@@ -41,11 +43,11 @@
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/imagemCurso"/>
 
-        <TextView
+        <!--<TextView
             android:id="@+id/especialidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Especialidade: "
+            android:text="Duração: "
             android:textSize="10sp"
             android:textStyle="bold"
             android:layout_below="@+id/curso"
@@ -55,14 +57,14 @@
             />
 
         <TextView
-            android:id="@+id/especialidade_valor"
+            android:id="@+id/duracao_valor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Valor"
             android:textSize="10sp"
             android:layout_toEndOf="@+id/especialidade"
             android:layout_below="@+id/curso"
-            />
+            />-->
 
 
         <!--<TextView
@@ -92,7 +94,7 @@
             android:id="@+id/txt_preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/especialidade_valor"
+            android:layout_below="@id/curso"
             android:layout_centerHorizontal="true"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -100,7 +102,7 @@
             android:text="Ler Mais"/>
         <ImageView
             android:id="@+id/img_star"
-            android:src="@drawable/ic_star_border_black_24dp"
+            android:src="@drawable/star_icon_black"
             android:layout_width="20sp"
             android:layout_height="20sp"
             android:layout_alignParentEnd="true"

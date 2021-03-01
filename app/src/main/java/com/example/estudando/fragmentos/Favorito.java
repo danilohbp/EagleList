@@ -1,5 +1,7 @@
 package com.example.estudando.fragmentos;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +9,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.estudando.AdapterCursos;
 import com.example.estudando.R;
 
 /**
@@ -61,5 +64,10 @@ public class Favorito extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_favorito, container, false);
+
+        
+    }
+
+    public void load(){
     }
 }

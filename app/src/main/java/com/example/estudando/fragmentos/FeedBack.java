@@ -62,10 +62,8 @@ public class FeedBack extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_feed_back, container, false);
 
-        //chamarAppsEmail();
+        View view = inflater.inflate(R.layout.fragment_feed_back, container, false);
 
         final RadioButton sugestao = view.findViewById(R.id.rdSugestao);
         final RadioButton critica = view.findViewById(R.id.rdCritica);
@@ -85,18 +83,15 @@ public class FeedBack extends Fragment {
                 }
             }
         });
-
-
         return view;
     }
-
 
 
     public void chamarAppsEmail(String assunto){
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         // The intent does not have a URI, so declare the "text/plain" MIME type
         emailIntent.setType("text/plain");
-        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"eaglelist@gmail.com"}); // recipients
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"eaglelist@gmail.com"});
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, assunto);
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Escreva seu feedback, por favor");
         startActivity(emailIntent);

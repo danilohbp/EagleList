@@ -3,6 +3,7 @@
     package="com.example.estudando">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:allowBackup="true"
@@ -11,16 +12,18 @@
         android:roundIcon="@mipmap/icone"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetalhesCurso"></activity>
+
         <activity android:name=".fragmentos.ErroConexao" />
-        <activity android:name=".ajuda.Ajuda" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".DetalhesCursoBradesco"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DetalhesCursoEmVideo"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".splashScreen.Splash"
             android:theme="@style/Theme.AppCompat.TelaCheia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

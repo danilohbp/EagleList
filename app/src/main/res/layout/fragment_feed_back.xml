@@ -3,6 +3,15 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ImageView
+        android:id="@+id/imgFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
     <TextView
         android:id="@+id/feedbackTitulo"
         android:layout_width="match_parent"
@@ -13,16 +22,28 @@
         android:textSize="30sp"
         android:gravity="center_horizontal"
         android:layout_marginTop="20dp"
+        android:layout_below="@+id/imgFeedBack"
         />
+
+    <TextView
+        android:id="@+id/textoFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Você tem alguma sugestão? Ou uma crítica construtiva?
+Estamos interessados em saber, por favor, compartilhe conosco."
+        android:textSize="14sp"
+        android:padding="10sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/feedbackTitulo"/>
 
     <TextView
         android:id="@+id/categoria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Categoria:"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:textStyle="bold"
-        android:layout_below="@+id/feedbackTitulo"
+        android:layout_below="@+id/textoFeedBack"
         android:paddingLeft="10dp"
         android:layout_marginTop="20dp"
         />
@@ -41,14 +62,14 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="80dp"
             android:text="Sugestão"
-            android:textSize="20sp"/>
+            android:textSize="14sp"/>
 
         <RadioButton
             android:id="@+id/rdCritica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Crítica"
-            android:textSize="20sp"/>
+            android:textSize="14sp"/>
     </RadioGroup>
 
     <RelativeLayout
@@ -56,13 +77,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/grupoRadioButtons"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="20dp">
         <Button
             android:id="@+id/btnEmail"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Escrever Email"
+            android:text="ENVIAR"
             android:textSize="20sp"
-            android:layout_centerInParent="true"/>
+            android:background="@color/eaglelistColoridoAzulCapri"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -1,7 +1,6 @@
 package com.example.estudando;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -22,10 +21,10 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.estudando.ajuda.Ajuda;
+import com.example.estudando.ajuda.AjudaFragmento;
 import com.example.estudando.fragmentos.CursosEad;
 import com.example.estudando.fragmentos.Favorito;
 import com.example.estudando.fragmentos.FeedBack;
-import com.example.estudando.fragmentos.MainFragment;
 import com.example.estudando.fragmentos.Sobre;
 import com.google.android.material.navigation.NavigationView;
 
@@ -43,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
     SearchView searchView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.lista){
+                    toolbar.setTitle("Cursos");
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
                     //cursos = new CursosEad();
@@ -85,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (id == R.id.favoritos){
+                    toolbar.setTitle("Favoritos");
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
                     Favorito favorito = new Favorito();
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (id == R.id.feedback){
-
+                    toolbar.setTitle("FeedBack");
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
                     FeedBack feedBack = new FeedBack();
@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (id == R.id.sobre){
+                    toolbar.setTitle("Sobre");
                     fragmentManager = getSupportFragmentManager();
                     fragmentTransaction = fragmentManager.beginTransaction();
                     Sobre sobre = new Sobre();
@@ -119,13 +120,16 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (id == R.id.ajuda){
-                    Intent telaAjuda = new Intent(getApplicationContext(), Ajuda.class);
-                    startActivity(telaAjuda);
-
-                    habilitaIconeFiltro(true);
+                    toolbar.setTitle("Como usar?");
+                    fragmentManager = getSupportFragmentManager();
+                    fragmentTransaction = fragmentManager.beginTransaction();
+                    AjudaFragmento sobre = new AjudaFragmento();
+                    fragmentTransaction.replace(R.id.fragmento, sobre);
+                    fragmentTransaction.commit();
 
                     ActionMenuItemView searchView = findViewById(R.id.search);
                     searchView.setVisibility(View.GONE);
+                    //toolbar.setVisibility(View.GONE);
                 }
 
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -174,6 +178,10 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean habilitaIconeFiltro(Boolean teste){
         return teste;
+    }
+
+    public void favoritar(){
+
     }
 
 

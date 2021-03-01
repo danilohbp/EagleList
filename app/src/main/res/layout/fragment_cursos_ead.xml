@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".fragmentos.ListFragment"
-    android:background="@color/colorCinza"
-    >
+    android:background="@color/colorCinza">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerV"
         android:layout_width="match_parent"
@@ -33,7 +33,5 @@
         android:layout_marginTop="5dp"
         android:gravity="center_horizontal"
         android:visibility="gone"/>
-
-
 
 </RelativeLayout>

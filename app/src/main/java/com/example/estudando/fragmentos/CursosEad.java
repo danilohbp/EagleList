@@ -11,11 +11,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.estudando.AdapterCursos;
-import com.example.estudando.MainActivity;
 import com.example.estudando.R;
 import com.example.estudando.entidades.Curso;
 
@@ -54,14 +54,17 @@ public class CursosEad extends Fragment {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterCursos = new AdapterCursos(getContext(), parseItem);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
+                DividerItemDecoration.VERTICAL);
+        recyclerView.addItemDecoration(dividerItemDecoration);
         recyclerView.setAdapter(adapterCursos);
 
         if (parseItem.isEmpty()){
             Conteudo conteudo = new Conteudo();
             conteudo.execute();
 
-            //Site2 site2 = new Site2();
-            //site2.execute();
+            Site2 site2 = new Site2();
+            site2.execute();
         }
     }
 
@@ -89,52 +92,47 @@ public class CursosEad extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
             try {
-
-                String url = "https://www.portalgsti.com.br/cursos/?title=gratuito&category=";
-
+                String url = "https://www.ev.org.br/areas-de-interesse/tecnologia";
                 Document doc = Jsoup.connect(url).get();
-
-                Elements data = doc.select("a.thumb__course");
-
+                Elements data = doc.select("div.o-internal-area_cards");
                 int size = data.size();
-
-                for (int i=0; i<size; i++){
-
-                    String nomeCurso = data.select("span.thumb__course__body")
-                            .select("span.thumb__course__title")
+                for (int i=0; i<11; i++){
+                    String nomeCurso = data
+                            .select("article.o-internal-area_card")
+                            .select("div.m-card_ctn")
+                            .select("div.m-card_hld")
+                            .select("h3.m-card_title")
                             .eq(i)
                             .text();
 
-                    String especialidade = data.select("span.thumb__course__categories")
+                    String descricao = data
+                            .select("article.o-internal-area_card")
+                            .select("div.m-card_ctn")
+                            .select("div.m-card_hld")
+                            .select("m-card_desc")
                             .eq(i)
                             .text();
 
-                    String imagemCurso = data.select("figure")
-                            .select("img")
-                            .eq(i)
-                            .attr("src");
-
-                    String detalhesUrl = data.select("a.thumb__course")
+                    String detalhesUrl = data
+                            .select("article.o-internal-area_card")
+                            .select("a.m-card_link")
                             .eq(i)
                             .attr("href");
 
-                    parseItem.add(new Curso(nomeCurso, especialidade, "", "", url, imagemCurso, R.id.img_star, detalhesUrl));
+                    String imgUrl = " ";
+                    parseItem.add(new Curso(nomeCurso, R.id.curso, R.id.img_star, imgUrl, detalhesUrl, "bradesco"));
                 }
-
-
             } catch (IOException e) {
                 e.printStackTrace();
-
-                Intent intent = new Intent(getContext(), ErroConexao.class);
-                startActivity(intent);
+                /*Intent intent = new Intent(getContext(), ErroConexao.class);
+                startActivity(intent);*/
             }
             return null;
         }
     }
 
 
-    /*private class Site2 extends AsyncTask<Void, Void, Void> {
-
+    private class Site2 extends AsyncTask<Void, Void, Void> {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -156,38 +154,41 @@ public class CursosEad extends Fragment {
         protected Void doInBackground(Void... voids) {
             try {
 
-                String url = "http://www.brasilmaisdigital.org.br/index.php/pt-br/cursos-online/";
-
+                String url = "https://www.cursoemvideo.com/cursos/";
                 Document doc = Jsoup.connect(url).get();
-
-                Elements data = doc.select("div.media-body");
-
+                Elements data = doc.select("div.ld-course-list-items");
                 int size = data.size();
+                for (int i=0; i<20; i++){
+                    String nomeCurso = data
+                            .select("div.ld_course_grid")
+                            .select("article.course")
+                            .select("div.caption")
+                            .select("h3.entry-title")
+                            .eq(i)
+                            .text();
 
-                for (int i=0; i<size; i++){
-
-                    String nomeCurso = data.select("h2.media-heading")
+                    String detalhesUrl = data
+                            .select("div.ld-course-list-items")
+                            .select("div.ld_course_grid")
+                            .eq(i)
+                            .select("article")
                             .select("a")
+                            .attr("href");
+
+                    String imgUrl = data
+                            .select("div.ld_course_grid")
                             .eq(i)
-                            .text();
+                            .select("article")
+                            .select("a")
+                            .select("img")
+                            .attr("src");
 
-                    String especialidade = data.select("div.article-aside")
-                            .select("span")
-                            .eq(i)
-                            .text();
-
-                    String imageUrl = "https://img.portalgsti.com.br/kPN_QWko_hlpXm4dcjotEcVdv1Q=/270x160/https://www.portalgsti.com.br/media/uploads/course/loiane-groner/2017/01/31/curso-java-basico.png";
-
-                    parseItem.add(new Curso(nomeCurso, especialidade, "", "", url, imageUrl, R.id.img_star, ""));
+                    parseItem.add(new Curso(nomeCurso, R.id.curso, R.id.img_star, imgUrl, detalhesUrl, "cursoEmVideo"));
                 }
-
             } catch (IOException e) {
                 e.printStackTrace();
-
-                Intent intent = new Intent(getContext(), MainActivity.class);
-                startActivity(intent);
             }
             return null;
         }
-    }*/
+    }
 }

@@ -22,7 +22,7 @@
             android:text="@string/sobreTitulo"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/eaglelistColoridoAzulCapri"/>
+            android:textColor="@color/colorBlack"/>
 
         <TextView
             android:id="@+id/sobreTexto1"
@@ -32,9 +32,9 @@
             android:textColor="#000"
             android:textSize="14sp"
             android:justificationMode="inter_word"
-            android:gravity="center_horizontal"
             android:layout_below="@id/eagleSobre"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"/>
         <TextView
             android:id="@+id/sobreTexto2"
             android:layout_width="wrap_content"
@@ -43,9 +43,10 @@
             android:textColor="#000"
             android:textSize="14sp"
             android:justificationMode="inter_word"
-            android:gravity="center_horizontal"
             android:layout_below="@id/sobreTexto1"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
         <TextView
             android:id="@+id/sobreTexto3"
             android:layout_width="wrap_content"
@@ -54,9 +55,10 @@
             android:textColor="#000"
             android:textSize="14sp"
             android:justificationMode="inter_word"
-            android:gravity="center_horizontal"
             android:layout_below="@id/sobreTexto2"
-            android:layout_margin="5dp"/>
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
 
 
 
@@ -78,14 +80,6 @@
             android:layout_marginTop="5dp"
             android:paddingLeft="5dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/logoSobre"
-            android:layout_alignEnd="@+id/logoSobre"
-            android:text="2020"
-            android:textSize="20sp"
-            android:paddingRight="10dp"/>
-    </RelativeLayout>
 
+    </RelativeLayout>
 </LinearLayout>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ajuda"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#000"
-    tools:context=".ajuda.Ajuda">
+    android:background="@drawable/ajuda2"
+    tools:context=".ajuda.AjudaFragmento">
 
-    <RelativeLayout
+
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:gravity="center|top"
             android:paddingTop="30dp"
-            android:text="EAGLE"
+            android:text="pag1"
             android:textSize="48sp"
             android:textStyle="bold"
             android:textColor="#fff"/>
@@ -101,5 +101,5 @@
             android:gravity="center_horizontal"
             android:layout_margin="10dp"
             android:layout_below="@+id/iconeChapeu"/>
-    </RelativeLayout>
-</LinearLayout>
+    </RelativeLayout>-->
+</RelativeLayout>

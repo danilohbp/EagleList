@@ -4,14 +4,15 @@
     android:fitsSystemWindows="false">
     <item
         android:id="@+id/search"
-        android:icon="@drawable/ic_search_black_24dp"
+        android:icon="@drawable/search_icon"
         android:title="Search"
         app:showAsAction="always|collapseActionView"
         app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
     <group>
-        <item android:id="@+id/listado"
+        <item android:id="@+id/filtro"
+            android:title="Filtrar"/>
+        <item android:id="@+id/configuracao"
             android:title="Configurações"/>
-        <item android:id="@+id/favoritos"
-            android:title="Sobre"/>
     </group>
 </menu>

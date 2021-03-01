@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/barra_app_detalhes_curso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"/>
+
+<ScrollView
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetalhesCurso">
+    tools:context=".DetalhesCursoBradesco"
+    android:layout_below="@id/barra_app_detalhes_curso">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,9 +34,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bannerCurso"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
             android:text="Nome do curso"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -34,42 +47,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tituloCurso"
+            android:justificationMode="inter_word"
             android:text="Detalhes do Curso"
             android:textSize="20sp"
             android:padding="16dp"/>
 
-        <TextView
+        <!--<TextView
             android:id="@+id/outrosDetalhes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Outros de detalhes"
             android:textSize="20sp"
             android:padding="16dp"
-            android:layout_below="@+id/descricaoCurso"/>
+            android:layout_below="@+id/descricaoCurso"/>-->
 
         <Button
             android:id="@+id/irSite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/outrosDetalhes"
+            android:layout_below="@+id/descricaoCurso"
             android:layout_marginBottom="5dp"
             android:layout_margin="16dp"
             android:text="IR PARA O SITE"
-            android:textColor="@color/colorWhite"
-            android:padding="15dp"
-            android:background="@color/colorPrimary"
-            android:onClick="acessarSite"
-            />
-        <Button
-            android:id="@+id/copiarLink"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_below="@+id/irSite"
-            android:layout_marginBottom="5dp"
-            android:layout_margin="16dp"
-            android:text="COPIAR LINK"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:textColor="@color/colorWhite"
             android:padding="15dp"
             android:background="@color/colorPrimary"
@@ -80,17 +82,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/copiarLink"
+            android:layout_below="@+id/irSite"
             android:layout_marginBottom="5dp"
             android:layout_margin="16dp"
             android:text="COMPARTILHAR"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:textColor="@color/colorWhite"
             android:padding="15dp"
             android:background="@color/colorPrimary"
-            android:onClick="acessarSite"
+            android:onClick="compartilharLink"
             />
 
     </RelativeLayout>
-
-
 </ScrollView>
+</RelativeLayout>

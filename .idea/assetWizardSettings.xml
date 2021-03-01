@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Android/plugins/android/lib/android.jar!/images/material/icons/materialicons/copyright/baseline_copyright_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Android/plugins/android/lib/android.jar!/images/material/icons/materialicons/star_border/baseline_star_border_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="copyright" />
+                            <entry key="color" value="ffffff" />
+                            <entry key="outputName" value="star_icon_white" />
                             <entry key="sourceFile" value="C:\Users\User\AndroidStudioProjects\eagle-list" />
                           </map>
                         </option>

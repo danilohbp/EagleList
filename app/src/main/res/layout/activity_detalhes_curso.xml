@@ -20,7 +20,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/bannerCurso"
@@ -52,21 +52,20 @@
             android:textSize="20sp"
             android:padding="16dp"/>
 
-        <!--<TextView
-            android:id="@+id/outrosDetalhes"
+        <ListView
+            android:id="@+id/listaConteudoModulos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Outros de detalhes"
+            android:layout_below="@+id/descricaoCurso"
             android:textSize="20sp"
-            android:padding="16dp"
-            android:layout_below="@+id/descricaoCurso"/>-->
+            android:padding="16dp"/>
 
         <Button
             android:id="@+id/irSite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_below="@+id/descricaoCurso"
+            android:layout_below="@+id/listaConteudoModulos"
             android:layout_marginBottom="5dp"
             android:layout_margin="16dp"
             android:text="IR PARA O SITE"

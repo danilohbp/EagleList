@@ -23,8 +23,6 @@ import java.util.ArrayList;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder> implements View.OnClickListener, Filterable {
-
-    LayoutInflater inflater;
     ArrayList<Curso> model, filtroLista;  // Adicão dos parâmetros da classe Model num array
     Filtro filtro;
     private Context context;
@@ -40,19 +38,14 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        TextView curso, especialidade, idioma, duracao, site;
+        TextView curso;
         ImageView imageid;
         CircleImageView imagemCurso;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             curso = itemView.findViewById(R.id.curso);
-            //especialidade = itemView.findViewById(R.id.especialidade_valor);
-            //idioma = itemView.findViewById(R.id.idioma_value);
-            //duracao = itemView.findViewById(R.id.duracao_valor);
-            //site = itemView.findViewById(R.id.site_value);
             imageid = itemView.findViewById(R.id.img_star);
-            //imageUrl = itemView.findViewById(R.id.imagemCurso);
             imagemCurso = itemView.findViewById(R.id.imagemCurso);
             itemView.setOnClickListener(this);
         }
@@ -68,8 +61,7 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
                 intent.putExtra("imagem", cursoItem.getImageUrl());
                 intent.putExtra("detalhes", cursoItem.getDetalhes());
                 context.startActivity(intent);
-            }
-            else if(cursoItem.getFundacao() == "cursoEmVideo"){
+            } else if(cursoItem.getFundacao() == "cursoEmVideo"){
                 Intent intent = new Intent(context, DetalhesCursoEmVideo.class);
                 intent.putExtra("titulo", cursoItem.getCurso());
                 intent.putExtra("imagem", cursoItem.getImageUrl());
@@ -91,24 +83,17 @@ public class AdapterCursos extends RecyclerView.Adapter<AdapterCursos.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
         String curso = model.get(position).getCurso();
-        //String especialidade = model.get(position).getEspecialidade();
-        //String idioma = model.get(position).getIdioma();
-        //String duracao = model.get(position).getDuracao();
         String site = model.get(position).getSite();
 
         int image = model.get(position).getImageid();
         holder.curso.setText(curso);
-        //holder.especialidade.setText(especialidade);
-        //holder.duracao.setText(duracao);
 
         if (position<11){
             holder.imagemCurso.setImageResource(R.drawable.curso);
-        }
-        else{
-            //Picasso.get().load(model.get(position).getImageUrl()).into(holder.imagemCurso);
+        } else{
+//            Picasso.get().load(model.get(position).getImageUrl()).into(holder.imagemCurso);
             holder.imagemCurso.setImageResource(R.drawable.cursoemvideo);
         }
-        //holder.imageid.setImageResource(R.drawable.star_icon_black);
 
         holder.imageid.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -19,13 +19,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.List;
 
 public class DetalhesCursoEmVideo extends AppCompatActivity {
-
-
     private ImageView bannerCurso;
     private TextView tituloCurso, detalhesCursoView, outrosDetalhesCursoView;
-    private String descricaoCurso, outrosDetalhesCurso;
+    private String descricaoCurso, listaConteudoModulos;
     private String baseUrl = "https://www.ev.org.br";
     private String detalhesUrl;
     private String url;
@@ -40,6 +39,7 @@ public class DetalhesCursoEmVideo extends AppCompatActivity {
         setSupportActionBar(detalhesCursoToolbar);
 
         ActionBar ab = getSupportActionBar();
+        assert ab != null;
         ab.setDisplayHomeAsUpEnabled(true);
 
         bannerCurso = findViewById(R.id.bannerCurso);
@@ -47,10 +47,8 @@ public class DetalhesCursoEmVideo extends AppCompatActivity {
         detalhesCursoView = findViewById(R.id.descricaoCurso);
 
         tituloCurso.setText(getIntent().getStringExtra("titulo"));
-        //bannerCurso.setImageResource(R.drawable.cursoemvideo);
+        bannerCurso.setImageResource(R.drawable.cursoemvideo);
         Picasso.get().load(getIntent().getStringExtra("imagemDetalhes")).into(bannerCurso);
-        String teste = getIntent().getStringExtra("fundacao");
-
         Conteudo2 conteudo2 = new Conteudo2();
         conteudo2.execute();
     }
@@ -74,9 +72,12 @@ public class DetalhesCursoEmVideo extends AppCompatActivity {
                 detalhesUrl = getIntent().getStringExtra("detalhes");
                 url = detalhesUrl;
                 Document doc = Jsoup.connect(url).get();
-                Elements data = doc.select("div.ld-tab-content");
+                Elements data = doc.select("div.ld-item-list-item")
+                        .select("div.ld-item-list-item-preview")
+                        .select("a.ld-item-name");
+
                 descricaoCurso = data
-                        .select("p")
+                        .select("div.ld-item-title")
                         .eq(0)
                         .text();
             } catch (IOException e) {

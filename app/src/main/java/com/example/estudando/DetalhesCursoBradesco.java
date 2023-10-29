@@ -4,6 +4,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Application;
 import android.content.ClipData;
 import android.content.Intent;
 import android.net.Uri;
@@ -23,12 +24,14 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class DetalhesCursoBradesco extends AppCompatActivity {
 
     private ImageView bannerCurso;
-    private TextView tituloCurso, detalhesCursoView, outrosDetalhesCursoView;
-    private String descricaoCurso, outrosDetalhesCurso;
+    private TextView tituloCurso, detalhesCursoView;
+    private String descricaoCurso;
     private String baseUrl = "https://www.ev.org.br";
     private String detalhesUrl;
     private String url;
@@ -51,7 +54,7 @@ public class DetalhesCursoBradesco extends AppCompatActivity {
         detalhesCursoView = findViewById(R.id.descricaoCurso);
 
         tituloCurso.setText(getIntent().getStringExtra("titulo"));
-        bannerCurso.setImageResource(R.drawable.bradesco);
+//        bannerCurso.setImageResource(R.drawable.bradesco);
         //Picasso.get().load(getIntent().getStringExtra("imagem")).into(bannerCurso);
         String teste = getIntent().getStringExtra("fundacao");
 

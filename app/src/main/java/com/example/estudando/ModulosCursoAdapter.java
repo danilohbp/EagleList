@@ -1,0 +1,35 @@
+package com.example.estudando;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+public class ModulosCursoAdapter extends BaseAdapter {
+    @Override
+    public int getCount() {
+        return 0;
+    }
+
+    @Override
+    public Object getItem(int i) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int i) {
+        return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup container) {
+        if (convertView == null) {
+            convertView = LayoutInflater.from(container.getContext()).inflate(R.layout.fragment_list, container, false);
+        }
+
+//        ((TextView) convertView.findViewById(android.R.id.))
+//                .setText(getItem(position));
+        return convertView;
+    }
+}

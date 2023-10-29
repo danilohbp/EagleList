@@ -92,7 +92,7 @@ public class CursosEad extends Fragment {
         @Override
         protected Void doInBackground(Void... voids) {
             try {
-                String url = "https://www.ev.org.br/areas-de-interesse/tecnologia";
+                String url = "https://www.ev.org.br/areas-de-interesse/tecnologia-da-informacao";
                 Document doc = Jsoup.connect(url).get();
                 Elements data = doc.select("div.o-internal-area_cards");
                 int size = data.size();
@@ -156,29 +156,30 @@ public class CursosEad extends Fragment {
 
                 String url = "https://www.cursoemvideo.com/cursos/";
                 Document doc = Jsoup.connect(url).get();
-                Elements data = doc.select("div.ld-course-list-items");
+                Elements data = doc.select("div.fl-post-grid");
                 int size = data.size();
                 for (int i=0; i<20; i++){
                     String nomeCurso = data
-                            .select("div.ld_course_grid")
-                            .select("article.course")
-                            .select("div.caption")
-                            .select("h3.entry-title")
+                            .select("div.fl-post-column")
+                            .select("div.fl-post-grid-post")
+                            .select("div.fl-post-grid-text")
+                            .select("h3.fl-post-grid-title")
                             .eq(i)
                             .text();
 
                     String detalhesUrl = data
-                            .select("div.ld-course-list-items")
-                            .select("div.ld_course_grid")
+                            .select("div.fl-post-column")
+                            .select("div.fl-post-grid-post")
+                            .select("div.fl-post-grid-text")
+                            .select("h3.fl-post-grid-title")
                             .eq(i)
-                            .select("article")
                             .select("a")
                             .attr("href");
 
                     String imgUrl = data
-                            .select("div.ld_course_grid")
+                            .select("div.fl-post-column")
+                            .select("div.fl-post-grid-post")
                             .eq(i)
-                            .select("article")
                             .select("a")
                             .select("img")
                             .attr("src");

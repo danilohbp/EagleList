@@ -31,6 +31,7 @@
             android:parentActivityName="com.example.estudando.MainActivity" />
         <activity
             android:name="com.example.estudando.splashScreen.Splash"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.TelaCheia" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,9 +6,7 @@ public class Curso {
     private String especialidade;
     private String curso;
     private String idioma;
-    //private String duracao;
     private String site;
-    //private String imageUrl;
     private int imageUrl;
     private String imgDetalhesUrl;
     private String detalhes;
@@ -17,10 +15,6 @@ public class Curso {
 
     public Curso(String curso, int imageUrl, int imageid, String imgDetalhesUrl, String detalhes, String fundacao) {
         this.curso = curso;
-        //this.especialidade = especialidade;
-        //this.idioma = idioma;
-        //this.duracao = duracao;
-        //this.site = site;
         this.imageUrl = imageUrl;
         this.imageid = imageid;
         this.imgDetalhesUrl = imgDetalhesUrl;
@@ -83,14 +77,6 @@ public class Curso {
     public void setIdioma(String idioma) {
         this.idioma = idioma;
     }
-
-    /*public String getDuracao() {
-        return duracao;
-    }
-
-    public void setDuracao(String duracao) {
-        this.duracao = duracao;
-    }*/
 
     public String getSite() {
         return site;
